@@ -12208,6 +12208,8 @@ self: super: with self; {
 
   pyqldb = callPackage ../development/python-modules/pyqldb { };
 
+  pyqodeng = callPackage ../development/python-modules/pyqodeng { };
+
   pyqrcode = callPackage ../development/python-modules/pyqrcode { };
 
   pyqt-builder = callPackage ../development/python-modules/pyqt-builder { };
