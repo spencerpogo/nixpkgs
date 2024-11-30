@@ -596,7 +596,9 @@ self: super: with self; {
 
   anel-pwrctrl-homeassistant = callPackage ../development/python-modules/anel-pwrctrl-homeassistant { };
 
-  angr = callPackage ../development/python-modules/angr { };
+  angr = callPackage ../development/python-modules/angr {
+    unicorn-emu = pkgs.unicorn;
+  };
 
   angrcli = callPackage ../development/python-modules/angrcli {
     inherit (pkgs) coreutils;
